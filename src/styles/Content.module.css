@@ -1,0 +1,15 @@
+.Content{
+  width: 50%;
+  margin: auto;
+  h1{
+    margin: 40px;
+  }
+
+  p{
+    margin-top: 20px;
+    font-size: 20px;
+  }
+}
+
+
+
