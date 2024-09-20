@@ -38,7 +38,7 @@ const App: React.FC = () => {
         setLoading(false);
         setMeaning(result);
         setSubTitle(`Results for the search: ${word}`);
-      }, 2000);
+      }, 1500);
       
     } catch (error) {
       console.error('Error when searching for word:', error);
