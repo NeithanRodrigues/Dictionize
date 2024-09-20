@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../styles/Dicionary.module.css';
+import styles from '../styles/Dictionary.module.css';
 
 interface MeaningResponse {
   word: string;

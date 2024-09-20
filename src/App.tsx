@@ -1,7 +1,7 @@
 import './App.css';
 import React, { useState } from 'react';
 import HeadBar from './components/HeadBar'; // Certifique-se de que o caminho está correto
-import Dictionary from './components/Dicionary';
+import Dictionary from './components/Dictionary';
 import { searchWord } from './api/api';
 import Content from './components/Content';
 import Loading from './components/Loading';
