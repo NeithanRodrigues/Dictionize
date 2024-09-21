@@ -1,4 +1,12 @@
 .Dicionary{
   width: 50%;
   margin: auto;
+  margin-bottom: 100px;
+}
+
+@media screen and (max-width: 840px) {
+  h2{
+    font-size: 20px;
+  }
+  
 }

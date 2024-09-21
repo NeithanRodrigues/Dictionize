@@ -56,7 +56,9 @@ const App: React.FC = () => {
       
       <div id="TitleContent">
       <h1>Welcome to Dictionize!</h1>
-        <h3>{subTitle}</h3>
+        {subTitle ? (
+          <h3>{subTitle}</h3>
+        ): null }
       </div> 
       
       {loading ? (

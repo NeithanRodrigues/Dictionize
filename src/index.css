@@ -11,7 +11,7 @@ p{
 }
 
 body{
-  background: linear-gradient(180deg,#04092e 20%,  #00031a 80%);
+  background: linear-gradient(180deg,#040a36 20%,  #00031a 80%);
   padding-bottom: 300px;
 }
 
@@ -37,3 +37,6 @@ h2{
 a{
   color: #3669e0;
 }
+
+
+

@@ -1,9 +1,14 @@
 #TitleContent{
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  align-items: center;
   margin: 40px;
-  h3{
-    margin: 55px;
-  }
+  
+}
+
+h3{
+  margin: 55px;
 }
 
 .error-message {
@@ -12,4 +17,25 @@
   margin: 20px; /* Espaçamento acima da mensagem */
   text-align: center;
   font-size: 25px;
+}
+
+@media screen and (max-width: 840px) {
+  #TitleContent{
+    margin: 0px;
+  }
+  
+  h3{
+    width: 100%; 
+    margin: 10px;
+  }
+
+  .error-message{
+    font-size: 15px;
+    margin: 0px;
+  }
+
+h1{
+  font-size: 20px;
+}
+
 }

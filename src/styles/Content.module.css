@@ -1,14 +1,28 @@
 .Content{
   width: 50%;
   margin: auto;
+}
+
+h1{
+  margin: 40px;
+}
+
+p{
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 840px) {
+  .Content{
+    width: 85%;
+  }
+  p{
+    font-size: 15px;
+  }
   h1{
-    margin: 40px;
+    font-size: 30px;
   }
 
-  p{
-    margin-top: 20px;
-    font-size: 20px;
-  }
 }
 
 

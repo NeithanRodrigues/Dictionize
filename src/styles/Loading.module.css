@@ -23,3 +23,15 @@
     transform: rotate(360deg);
   }
 }
+
+@media screen and (max-width: 840px) {
+  .LoadingSpinner{
+    margin: 30px;
+  }
+
+  .Spinner{
+    width: 50x;
+    height: 50px;
+  }
+
+}

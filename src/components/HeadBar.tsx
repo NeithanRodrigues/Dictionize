@@ -21,7 +21,7 @@ const HeadBar: React.FC<InputProps> = ({ onSearch }) => {
 
     return (
       <div className={styles.Bar}>
-        <h1>Dictionize</h1>
+        <h1 className={styles.Dictionize}>Dictionize</h1>
         <div className={styles.SearchBox}>
           <input
             type="text"
