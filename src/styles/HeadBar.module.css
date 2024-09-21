@@ -63,12 +63,12 @@
   .Input {
     width: 150px;
     font-size: 16px;
-    padding: 5px 0px 5px 0px;
+    padding:0px;
   }
 
   .Button {
     padding: 0.5em;
     font-size: 10px;
-    border-color: none;
+    
   }
 }

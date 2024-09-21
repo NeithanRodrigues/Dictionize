@@ -23,7 +23,7 @@ export interface MeaningResponse {
 
 const App: React.FC = () => {
   const [meaning, setMeaning] = useState<MeaningResponse | null>(null);
-  
+  const [word, setWord] = useState<string>('');
   const [error, setError] = useState<string | null>(null);
   const [subTitle, setSubTitle] = useState<string | null>('We are waiting you search for the word...');
   const [loading, setLoading] = useState<boolean>(false);
@@ -31,7 +31,7 @@ const App: React.FC = () => {
     setError(null);
     setLoading(true);
     setSubTitle(null);
-    
+    setWord(word);
     try {
       const result = await searchWord(word);
       setTimeout(() => {
@@ -47,11 +47,16 @@ const App: React.FC = () => {
       setSubTitle(null);
       setLoading(false);
     }
+  }
+  const handleKeyPress = (event: React.KeyboardEvent<HTMLInputElement>) => {
+    if (event.key === 'Enter') {
+      HandleSearchWord(word); // Usando o estado 'word'
+    }
   };
 
   return (
     <div>
-      <HeadBar onSearch={HandleSearchWord} />
+      <HeadBar onSearch={HandleSearchWord} onKeyPress={handleKeyPress} setWord={setWord} />
       
       
       <div id="TitleContent">
