@@ -33,7 +33,7 @@ const HeadBar: React.FC<HeadBarProps> = ({ onSearch, onKeyPress, setWord }) => {
             setWord(e.target.value); 
           }}
           onKeyPress={onKeyPress}
-          placeholder='Write the word here'
+          placeholder='Search here'
           className={styles.Input}
         />
         <button

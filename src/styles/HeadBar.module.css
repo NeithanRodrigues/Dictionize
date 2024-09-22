@@ -3,7 +3,7 @@
   padding: 30px;
   margin: 0;
   box-sizing: border-box;
-  background-color: #00031a;
+  background-color: #000;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -56,19 +56,19 @@
   }
 
   .Dictionize {
-    font-size: 20px;
+    font-size: 23px;
     margin: 25px;
   }
 
   .Input {
     width: 150px;
     font-size: 16px;
-    padding:0px;
+    padding:0.1rem;
   }
 
   .Button {
     padding: 0.5em;
     font-size: 10px;
-    
+   
   }
 }

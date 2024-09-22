@@ -10,10 +10,10 @@ function Content() {
 
       <h1> About</h1>
       <p>This is your ideal platform to explore word meanings, synonyms, antonyms and more! Whether you're a student, writer, or just curious about the language, this site makes it easy to quickly find and understand word definitions. Designed with a simple and intuitive interface, Dictionize is here to improve your vocabulary in just a few clicks.</p>
-
+      <br></br>
       <p>This project was created by <a href="https://www.instagram.com/ne1than/">Nathan Rodrigues</a>, a Brazilian computer science student as a way to practice and improve programming skills. Built using React and TypeScript, the development of this site has helped the developer refine knowledge in front-end technologies, while making something practical and useful for others.
       </p>
-
+      <br></br>
       <p>Thank you for visiting, and we hope you enjoy using Dictionize!</p>
 
     </div>
