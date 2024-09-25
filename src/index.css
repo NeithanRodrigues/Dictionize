@@ -2,16 +2,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inter", "sans-serif";
+  font-family: "Roboto", "sans-serif";
   color: #a3a3a3; 
+  text-align: justify;
 }
 
-p{
-  font-size: 20px;  
-}
+
 
 body{
-  background: linear-gradient(180deg,#06105c 20%,  #00031a 80%);
+  background: linear-gradient(180deg,#084799 20%,  #000 80%);
   padding-bottom: 300px;
 }
 
@@ -32,10 +31,8 @@ h2{
   margin: 20px;
 }
 
-
-
 a{
-  color: #3669e0;
+ font-style: none;
 }
 
 

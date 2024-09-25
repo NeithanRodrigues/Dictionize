@@ -10,15 +10,16 @@ h1{
 p{
   margin-top: 20px;
   font-size: 20px;
+  text-align: justify;
 }
 
 @media screen and (max-width: 840px) {
   .Content{
-    width: 85%;
+    width: 95%;
   }
   p{
     font-size: 15px;
-    width: 90%;
+    width: 95%;
     margin: auto;
   }
   h1{
