@@ -1,41 +1,42 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", "sans-serif";
-  color: #c4c4c4; 
+  color: #fff;
   text-align: justify;
 }
 
 
 
-body{
-  background: linear-gradient(180deg,#084799 20%,  #000 80%);
-  padding-bottom: 300px;
+body {
+  background-color: #3b3939;
+  padding-bottom: 100px;
 }
 
-p, h1, h3{
+p,
+h1,
+h3 {
   text-align: center;
 }
 
-h3{
-  margin:40px;
+h3 {
+  margin: 40px;
 
 }
 
-h1, h2{
-  color: white;
+h1,
+h2 {
+  color: #2496f2;
 }
 
-h2{
+h2 {
   margin: 20px;
+  
 }
 
 
 
-a{
- font-style: none;
+a {
+  font-style: none;
 }
-
-
-

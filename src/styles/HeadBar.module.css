@@ -3,7 +3,7 @@
   padding: 30px;
   margin: 0;
   box-sizing: border-box;
-  background-color: #000;
+  background-color: #0f0f0f;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -12,6 +12,7 @@
 .Dictionize {
   font-size: 50px;
   margin: 0;
+  color: #2496f2;
 }
 
 .SearchBox {
@@ -25,14 +26,18 @@
   margin-right: 20px;
   padding: 0.5em;
   font-size: 16px;
-  color: #fff;
   border: none;
-  background-color: #333;
+  color: black;
+  
+}
+
+.Input::placeholder{
+  color:black;
 }
 
 .Button {
   border-radius: 5px;
-  background-color: #333;
+  background-color: #2496f2;
   padding: 0.5em;
   color: #fff;
   font-size: 16px;
@@ -41,7 +46,7 @@
 
 .Button:hover {
   border-radius: 5px;
-  background-color: #555;
+  background-color: #0091ff;
   padding: 0.5em;
   border-color: none;
 }
