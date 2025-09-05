@@ -1,6 +1,6 @@
 import './App.css';
 import React, { useState } from 'react';
-import HeadBar from './components/HeadBar'; // Certifique-se de que o caminho está correto
+import HeadBar from './components/HeadBar';
 import Dictionary from './components/Dictionary';
 import { searchWord } from './api/api';
 import Content from './components/Content';
@@ -19,7 +19,7 @@ export interface MeaningResponse {
     antonyms?: string[];
   }>;
   sourceUrls: string[];
-} 
+}
 
 const App: React.FC = () => {
   const [meaning, setMeaning] = useState<MeaningResponse | null>(null);
@@ -39,7 +39,7 @@ const App: React.FC = () => {
         setMeaning(result);
         setSubTitle(`Results for the search: ${word}`);
       }, 1500);
-      
+
     } catch (error) {
       console.error('Error when searching for word:', error);
       setMeaning(null);
@@ -55,17 +55,16 @@ const App: React.FC = () => {
   };
 
   return (
-    <div>
+    <div className="bg-[#E7F9E7]">
       <HeadBar onSearch={HandleSearchWord} onKeyPress={handleKeyPress} setWord={setWord} />
-      
-      
-      <div id="TitleContent">
-      <h1>Welcome to Dictionize!</h1>
-        {subTitle ? (
-          <h3>{subTitle}</h3>
-        ): null }
-      </div> 
-      
+
+      <div id="TitleContent" className="flex flex-col text-center items-center mt-[30px]">
+        <h1 className="text-4xl font-bold text-[#A0E79E]">Welcome to Dictionize!</h1>
+        {subTitle ? ( 
+          <h3 className='text-gray-600'>{subTitle}</h3>
+        ) : null}
+      </div>
+
       {loading ? (
         <Loading />
       ) : meaning ? (
