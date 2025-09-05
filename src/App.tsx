@@ -59,7 +59,7 @@ const App: React.FC = () => {
       <HeadBar onSearch={HandleSearchWord} onKeyPress={handleKeyPress} setWord={setWord} />
 
       <div id="TitleContent" className="flex flex-col text-center items-center mt-[30px]">
-        <h1 className="text-4xl font-bold text-[#A0E79E]">Welcome to Dictionize!</h1>
+        <h1 className="text-2xl md:text-4xl font-bold text-[#A0E79E]">Welcome to Dictionize!</h1>
         {subTitle ? (
           <h3 className='text-gray-600'>{subTitle}</h3>
         ) : null}

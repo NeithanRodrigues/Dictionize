@@ -28,27 +28,27 @@ const Dictionary: React.FC<DictionaryProps> = ({ meaning }) => {
     <div className="w-[50%] m-auto md:w-[50%] w-[90%]">
       {meaning.meanings.map((meaningObj, index) => (
         <div key={index}>
-          <h2 className="text-3xl text-[#A0E79E] font-bold mt-14 capitalize">{meaningObj.partOfSpeech}</h2>
+          <h2 className="text-2xl md:text-3xl text-[#A0E79E] font-bold mt-14 capitalize">{meaningObj.partOfSpeech}</h2>
           <br />
           {meaningObj.definitions.map((definition, defIndex) => (
             <div key={defIndex}>
-              <p className="mt-2">{definition.definition}</p>
+              <p className="mt-2 text-[14px]">{definition.definition}</p>
               {definition.example && <p><i>Example: {definition.example}</i></p>}
             </div>
           ))}
 
           {meaningObj.synonyms && meaningObj.synonyms.length > 0 && (
-            <p><br /><b><strong>Synonyms:</strong></b> {meaningObj.synonyms.join(', ')}</p>
+            <p className="text-[14px]"><br /><b><strong>Synonyms:</strong></b> {meaningObj.synonyms.join(', ')}</p>
           )}
           {meaningObj.antonyms && meaningObj.antonyms.length > 0 && (
-            <p><br /><b><strong>Antonyms:</strong></b> {meaningObj.antonyms.join(', ')}</p>
+            <p className="text-[14px]"><br /><b><strong>Antonyms:</strong></b> {meaningObj.antonyms.join(', ')}</p>
           )}
         </div>
       ))}
 
       {meaning.sourceUrls && meaning.sourceUrls.length > 0 && (
         <div>
-          <p><br /><strong>Reference:</strong> <a href={meaning.sourceUrls[0]} target="_blank" rel="noopener noreferrer">{meaning.sourceUrls[0]}</a></p>
+          <p className="text-[14px]"><br /><strong>Reference:</strong> <a href={meaning.sourceUrls[0]} target="_blank" rel="noopener noreferrer">{meaning.sourceUrls[0]}</a></p>
         </div>
       )}
     </div>

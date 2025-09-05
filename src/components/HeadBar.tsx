@@ -32,10 +32,10 @@ const HeadBar: React.FC<HeadBarProps> = ({ onSearch, onKeyPress, setWord }) => {
           }}
           onKeyPress={onKeyPress}
           placeholder='Search here'
-          className="md:w-[350px] w-[200px] rounded-md p-2 mr-5 text-gray-800 placeholder-gray-800 bg-[#D0F3CF]"
+          className="md:w-[350px] w-[200px] rounded-md py-1 px-2 mr-5 text-gray-800 placeholder-gray-800 bg-[#D0F3CF]"
         />
         <button
-          className="bg-[#D0F3CF] hover:bg-[#B8EDB6] text-gray-800 rounded-md p-2"
+          className="bg-[#D0F3CF] hover:bg-[#B8EDB6] text-gray-800 rounded-md py-1 px-2"
           onClick={handleSearch}
         >Submit</button>
       </div>
