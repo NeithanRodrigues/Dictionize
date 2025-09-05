@@ -32,23 +32,23 @@ const Dictionary: React.FC<DictionaryProps> = ({ meaning }) => {
           <br />
           {meaningObj.definitions.map((definition, defIndex) => (
             <div key={defIndex}>
-              <p className="mt-2 text-[14px]">{definition.definition}</p>
+              <p className="mt-2 text-[14px] md:text-[16px]">{definition.definition}</p>
               {definition.example && <p><i>Example: {definition.example}</i></p>}
             </div>
           ))}
 
           {meaningObj.synonyms && meaningObj.synonyms.length > 0 && (
-            <p className="text-[14px]"><br /><b><strong>Synonyms:</strong></b> {meaningObj.synonyms.join(', ')}</p>
+            <p className="text-[14px] md:text-[16px]"><br /><b><strong>Synonyms:</strong></b> {meaningObj.synonyms.join(', ')}</p>
           )}
           {meaningObj.antonyms && meaningObj.antonyms.length > 0 && (
-            <p className="text-[14px]"><br /><b><strong>Antonyms:</strong></b> {meaningObj.antonyms.join(', ')}</p>
+            <p className="text-[14px] md:text-[16px]"><br /><b><strong>Antonyms:</strong></b> {meaningObj.antonyms.join(', ')}</p>
           )}
         </div>
       ))}
 
       {meaning.sourceUrls && meaning.sourceUrls.length > 0 && (
         <div>
-          <p className="text-[14px]"><br /><strong>Reference:</strong> <a href={meaning.sourceUrls[0]} target="_blank" rel="noopener noreferrer">{meaning.sourceUrls[0]}</a></p>
+          <p className="text-[14px] md:text-[16px]"><br /><strong>Reference:</strong> <a href={meaning.sourceUrls[0]} target="_blank" rel="noopener noreferrer">{meaning.sourceUrls[0]}</a></p>
         </div>
       )}
     </div>
