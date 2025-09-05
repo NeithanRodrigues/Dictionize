@@ -22,7 +22,7 @@ const HeadBar: React.FC<HeadBarProps> = ({ onSearch, onKeyPress, setWord }) => {
   return (
     <div className="flex flex-col md:flex-row md:justify-between items-center p-30 bg-[#A0E79E]">
       <h1 className="md:text-5xl text-4xl m-5 font-bold text-white">Dictionize</h1>
-      <div className="items-center mb-5 md:0">
+      <div className="items-center mb-5 md:m-0 md:mr-5">
         <input
           type="text"
           value={localWord}

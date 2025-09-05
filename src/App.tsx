@@ -55,12 +55,12 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="bg-[#E7F9E7]">
+    <div className="bg-[#E7F9E7] min-h-screen">
       <HeadBar onSearch={HandleSearchWord} onKeyPress={handleKeyPress} setWord={setWord} />
 
       <div id="TitleContent" className="flex flex-col text-center items-center mt-[30px]">
         <h1 className="text-4xl font-bold text-[#A0E79E]">Welcome to Dictionize!</h1>
-        {subTitle ? ( 
+        {subTitle ? (
           <h3 className='text-gray-600'>{subTitle}</h3>
         ) : null}
       </div>
@@ -73,6 +73,9 @@ const App: React.FC = () => {
         <div className="error-message">{error}</div>
       )}
       <Content />
+
+      <p className="text-gray-800 text-center mt-10 pb-5">© Website maked by<a href="https://www.instagram.com/ne1than/"> <span className="hover:font-bold">Nathan</span></a>.</p>
+
     </div>
   );
 }

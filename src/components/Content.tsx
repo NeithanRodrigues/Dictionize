@@ -14,8 +14,6 @@ function Content() {
       <br></br>
       <p className="mt-5">Thank you for visiting, and we hope you enjoy using Dictionize!</p>
 
-      <p className="text-gray-800 text-center mt-10 mb-5">© Website maked by<a href="https://www.instagram.com/ne1than/"> <span className="hover:font-bold">Nathan</span></a>.</p>
-
     </div>
   );
 }
