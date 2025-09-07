@@ -12,7 +12,7 @@ function Content() {
       <p className="mt-5 text-[14px] md:text-[16px]">This project was created by <a href="https://www.instagram.com/ne1than/"><span className="hover:font-bold underline">Nathan Rodrigues</span></a>, a Brazilian computer science student as a way to practice and improve programming skills. Built using React and TypeScript, the development of this site has helped the developer refine knowledge in front-end technologies, while making something practical and useful for others.
       </p>
       <br></br>
-      <p className="mt-5">Thank you for visiting, and we hope you enjoy using Dictionize!</p>
+      <p className="mt-5 text-[14px] md:text-[16px]">Thank you for visiting, and we hope you enjoy using Dictionize!</p>
 
     </div>
   );

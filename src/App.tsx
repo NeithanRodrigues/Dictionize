@@ -70,7 +70,7 @@ const App: React.FC = () => {
       ) : meaning ? (
         <Dictionary meaning={meaning} />
       ) : (
-        <div className="error-message">{error}</div>
+        <div className="error-message text-center text-[14px] md:text-[16px] ">{error}</div>
       )}
       <Content />
 
